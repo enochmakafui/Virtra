@@ -13,10 +13,10 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className='bg-white shadow-sm fixed top-0 left-0 w-full z-50'>
-      <div className='max-w-6xl mx-auto px-4 py-3 flex items-center justify-between'>
+    <nav className=''>
+      <div className='max-w-6xl mx-auto px-4 py-1 flex items-center justify-between'>
         {/* Logo */}
-        <div className='w-16 md:w-28'>
+        <div className='w-16 md:w-20'>
           <img src={logo} alt='Logo' className='w-full h-auto object-contain' />
         </div>
 
@@ -31,15 +31,15 @@ export default function NavBar() {
         )}
 
         {/* Desktop Navigation */}
-        <ul className='hidden md:flex gap-3 items-center bg-blue-500 p-2 rounded-3xl'>
+        <ul className='hidden md:flex gap-3 items-center bg-blue-500 px-2 py-3 rounded-3xl'>
           {navItems.map(({ to, label }) => (
             <li key={to}>
               <NavLink
                 to={to}
                 className={({ isActive }) =>
                   isActive
-                    ? 'bg-white text-blue-500 font-semibold text-lg px-4 py-2 rounded-3xl'
-                    : 'text-white hover:bg-blue-600 text-lg px-4 py-2 rounded-3xl transition'
+                    ? 'bg-white text-blue-500 font-semibold text-base px-4 py-2 rounded-3xl'
+                    : 'text-white hover:bg-blue-600 text-base px-4 py-2 rounded-3xl transition'
                 }
               >
                 {label}
@@ -72,7 +72,7 @@ export default function NavBar() {
                 ? 'bg-white text-blue-500 font-semibold px-6 py-3 rounded-3xl text-lg md:text-xl'
                 : 'hover:bg-blue-600 px-6 py-3 rounded-3xl transition text-lg md:text-xl'
             }
-            onClick={() => setIsOpen(false)} // Close menu on nav click
+            onClick={() => setIsOpen(false)}
           >
             {label}
           </NavLink>

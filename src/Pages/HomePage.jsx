@@ -7,9 +7,9 @@ export default function HomePage() {
   return (
     <div>
       <NavBar />
-      <div className="max-w-6xl mx-auto font-['Preahvihear'] py-20 px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-x-40">
-        <div className='flex flex-col justify-center gap-4 items-center'>
-          <h1 className='text-4xl md:text-9xl uppercase mt-10 md:mt-0'>Virtra</h1>
+      <div className="max-w-6xl mx-auto font-['Preahvihear'] py-20 px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-x-40 pt-10 md:pt-24">
+        <div className='flex flex-col justify-center md:justify-start gap-4 items-center md:items-start'>
+          <h1 className='text-4xl md:text-9xl uppercase '>Virtra</h1>
           <div>
             <p className='text-lg pl-4 '>Consult Specialist And Diagnostics</p>
             <p className='text-lg pl-4 '>You all in One Health Application</p>
