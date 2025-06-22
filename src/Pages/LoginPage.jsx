@@ -1,11 +1,17 @@
-import Footer from '../Components/Footer';
-import NavBar from '../Components/NavBar';
+import LoginForm from '../features/authentication/LoginForm';
+import Container from '../ui/Container';
+import DoctorLandingPageImage from '../ui/DoctorLandingPageImage';
+import Footer from '../ui/Footer';
+import NavBar from '../ui/NavBar';
 
 export default function LoginPage() {
   return (
     <div>
       <NavBar />
-      <div className='max-w-6xl mx-auto'>LoginPage</div>
+      <Container>
+        <DoctorLandingPageImage />
+        <LoginForm />
+      </Container>
       <Footer />
     </div>
   );
