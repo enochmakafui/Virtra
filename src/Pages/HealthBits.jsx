@@ -20,7 +20,7 @@ function HealthBits() {
       <h2 className='text-3xl text-gray-600 font-semibold mb-8'>
         Trending Health Articles
       </h2>
-      <div className='p-4 grid grid-cols-4 gap-8 '>
+      <div className='p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
         {articles.map((article) => (
           <ArticleCard article={article} key={article.title} />
         ))}

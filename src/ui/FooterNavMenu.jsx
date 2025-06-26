@@ -9,7 +9,10 @@ function FooterNavMenu() {
         </Link>
       </li>
       <li>
-        <Link className='hover:text-blue-500 duration-300 ease-in transition'>
+        <Link
+          className='hover:text-blue-500 duration-300 ease-in transition'
+          to='app'
+        >
           App
         </Link>
       </li>
